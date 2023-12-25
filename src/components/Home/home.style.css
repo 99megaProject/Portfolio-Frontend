@@ -1,0 +1,94 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: yellow;
+  cursor: pointer;
+  width: 10rem;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #e9ac07;
+  height: 0.5rem;
+}
+
+
+
+.components {
+  transition: all 2s;
+}
+
+.components_container {
+  transition: all 2s;
+
+}
+
+
+.component01 {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.component01.show_animation {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.component02 {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.component02.show_animation {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.component03 {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.component03.show_animation {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.component04 {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.component04.show_animation {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.component05 {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.component05.show_animation {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.component06 {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.component06.show_animation {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.component07 {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.component07.show_animation {
+  transform: translate(0);
+  opacity: 1;
+}
