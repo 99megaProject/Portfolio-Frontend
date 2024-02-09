@@ -235,7 +235,7 @@ export default function Home() {
                             <div className="flex justify-around flex-col md:flex-row components component04 gap-[20%] ">
                                 {/* I provide service on */}
 
-                                <div className="w-[100%]   flex flex-col items-center my-[20px] bg-violet-300  rounded-2xl   py-[20px]  ">
+                                {/* <div className="w-[100%]   flex flex-col items-center my-[20px] bg-violet-300  rounded-2xl   py-[20px]  ">
                                     <div>
                                         <h1 className="text-2xl sm:text-4xl font-bold pb-[10px] border-b-violet-300 border-b-[5px] border-rounded ">
                                             Service on{" "}
@@ -250,7 +250,8 @@ export default function Home() {
                                             }
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
+                                
                                 {/* Follow me on  */}
 
                                 <div className="w-[100%]  flex flex-col items-center components component05 my-[20px] bg-violet-300 rounded-2xl  py-[20px] ">
@@ -273,7 +274,7 @@ export default function Home() {
                             <div className="flex justify-around flex-col md:flex-row  gap-[10%] ">
                                 {/* My client says  */}
 
-                                <div className="w-[100%] flex  flex-col items-center my-[20px] bg-violet-300 components component06  rounded-2xl   py-[20px] px-[10px] ">
+                                {/* <div className="w-[100%] flex  flex-col items-center my-[20px] bg-violet-300 components component06  rounded-2xl   py-[20px] px-[10px] ">
                                     <div>
                                         <h1 className="text-2xl sm:text-4xl font-bold pb-[10px] border-b-violet-300 border-b-[5px] border-rounded ">
                                             My Client Says{" "}
@@ -300,7 +301,7 @@ export default function Home() {
                                             </button>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 {/* contact me  */}
 
