@@ -98,6 +98,7 @@ export default function Home() {
     // }
 
     // follow me
+
     const followMeApiFn = () => {
         followMeFn()
             .then((res) => {
@@ -134,7 +135,7 @@ export default function Home() {
         projectApiFn();
         //     // homePageApiFn();
         //     aboutMeApiFn();
-            followMeApiFn();
+        followMeApiFn();
         //     serviceApiFn();
         //     myClientApiFn();
 
@@ -180,7 +181,7 @@ export default function Home() {
                 {/* home */}
                 <div className="components ">
                     {/* < HomePage props={homePageApi} /> */}
-                    < HomePage  />
+                    < HomePage />
                 </div>
 
                 {/* about me  */}
@@ -199,7 +200,7 @@ export default function Home() {
                             projectApi && projectApi.length > 1 ?
 
 
-                                <div id="myproject" className="w-[100%] flex flex-col relative items-center justify-center components component03 "  >
+                                <div id="myproject" className="w-[100%] flex flex-col relative items-center justify-center components  "  >
                                     <div>
                                         <h1 className="text-2xl sm:text-4xl font-bold pb-[10px] border-b-violet-300 border-b-[5px] border-rounded ">
                                             My Projects
@@ -246,7 +247,7 @@ export default function Home() {
 
                     </div>
 
-                    <div className="flex justify-around flex-col md:flex-row components component04 gap-[20%] ">
+                    <div className="flex justify-around flex-col md:flex-row components  gap-[20%] ">
                         {/* I provide service on */}
 
                         {/* <div className="w-[100%]   flex flex-col items-center my-[20px] bg-violet-300  rounded-2xl   py-[20px]  ">
@@ -268,7 +269,7 @@ export default function Home() {
 
                         {/* Follow me on  */}
 
-                        <div className="w-[100%]  flex flex-col items-center components component05 my-[20px] bg-violet-300 rounded-2xl  py-[20px] ">
+                        <div className="w-[100%]  flex flex-col items-center components  my-[20px] bg-violet-300 rounded-2xl  py-[20px] ">
                             <div>
                                 <h1 className="text-2xl sm:text-4xl font-bold pb-[10px] border-b-violet-300 border-b-[5px] border-rounded ">
                                     Follow Me{" "}
@@ -319,7 +320,7 @@ export default function Home() {
 
                         {/* contact me  */}
 
-                        <div className="w-[100%] flex  flex-col bg-violet-300  rounded-2xl components component07   py-[20px] items-center my-[20px] ">
+                        <div className="w-[100%] flex  flex-col bg-violet-300  rounded-2xl components    py-[20px] items-center my-[20px] ">
                             <div>
                                 <h1 className="text-2xl sm:text-4xl font-bold pb-[10px] border-b-violet-300 border-b-[5px] border-rounded ">
                                     Contact Me

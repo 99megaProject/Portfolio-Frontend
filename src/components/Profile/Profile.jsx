@@ -104,12 +104,11 @@ export function AboutMe() {
 
                     {
 
-                        skillValue.map((val) => {
-
-                            < div className={`px-[20px] font-semibold rounded py-[10px] !bg-white !text-black`}>
+                        skillValue.map((val, idx) => (
+                            < div className={`px-[20px] font-semibold rounded py-[10px] !bg-white !text-black`} key={idx}>
                                 <p className="capitalize">{val}</p>
                             </div>
-                        })
+                        ))
                     }
                 </div>
                 <a href='https://docs.google.com/document/d/1FPxy_vgc66o70TDfBocVopxtva0Mq8F3lzf9RVa9CG4/edit?usp=sharing' target='_main'>
