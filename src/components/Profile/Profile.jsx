@@ -13,30 +13,30 @@ export function HomePage() {
     const refrenceHeading = `<div >I am  <span style='color:rgb(167 139 250)' > Full-Stack </span> web-developer.</div>`
     const [homePageApi, setHomePageApi] = useState({})
 
-
     // home page
-    const homePageApiFn = () => {
-        homePageFn()
-            .then((res) => {
-                if (res.success) {
-                    setHomePageApi(res?.data[0])
-                    let heading = document.createElement('span')
-                    heading.innerHTML = (res?.data[0]?.heading) || refrenceHeading
 
-                    document.querySelector('.heading')?.appendChild(heading)
+    // const homePageApiFn = () => {
+    //     homePageFn()
+    //         .then((res) => {
+    //             if (res.success) {
+    //                 setHomePageApi(res?.data[0])
+    //                 let heading = document.createElement('span')
+    //                 heading.innerHTML = (res?.data[0]?.heading) || refrenceHeading
 
-                }
-                else toast.error(res.message, toastErrorProp);
-            })
-            .catch(() => {
-                toast.error("Can't load home page info.", toastErrorProp);
-            });
-    }
+    //                 document.querySelector('.heading')?.appendChild(heading)
+
+    //             }
+    //             else toast.error(res.message, toastErrorProp);
+    //         })
+    //         .catch(() => {
+    //             toast.error("Can't load home page info.", toastErrorProp);
+    //         });
+    // }
 
 
-    useEffect(() => {
-        homePageApiFn();
-    }, [])
+    // useEffect(() => {
+    //     homePageApiFn();
+    // }, [])
 
     return (
         <>
@@ -45,12 +45,14 @@ export function HomePage() {
 
                 <div className="flex py-[20px]  flex-col sm:flex-row items-center justify-between">
                     <div className=" sm:w-[40%] ">
-                        <p className="capitalize" >{homePageApi?.title}</p>
+                        <p className="capitalize" >Hi, I'm Sandeep Kumar</p>
                         <h1 className="text-5xl font-bold heading "  >
-                           
+                            I'm Full-Stack Expert Web-Developer.
                         </h1>
                         <p className="my-[5px]">
-                            {homePageApi?.description}
+                            I'm passionated full-stack and MERN stack developer. I transform ideas into exception web experience.
+
+
                         </p>
                         <a href="#myproject"><button className={`${btn_style} flex  items-center`} >
                             My Project{" "}
@@ -61,7 +63,7 @@ export function HomePage() {
                     <div>
                         <img
                             className={`rounded-full my-[10px] sm:my-[0px]  w-[200px] h-[200px]  sm:w-[300px] sm:h-[300px]  md:w-[400px] md:h-[400px]`}
-                            src={homePageApi?.avatar}
+                            src='https://res.cloudinary.com/diix8cjww/image/upload/v1703577112/aboutMeAvatar/sp78hdavik1hr5wtlbnr.jpg'
                             alt=""
                         />
                         <div></div>
@@ -77,14 +79,15 @@ export function HomePage() {
 }
 
 
-export function AboutMe({ props }) {
-    ///  console.log(props);
+export function AboutMe() {
+    const skillValue = ['HTML', 'CSS', 'JavaScript', 'Tailwind', 'React', 'Node', 'Express', 'Mongodb', 'Mongoose', 'Git']
+
     return (
         <div className="flex  py-[20px] flex-col sm:flex-row  items-center justify-between">
             <div>
                 <img
                     className={`rounded-full w-[200px] h-[200px]  sm:w-[300px] sm:h-[300px]  md:w-[400px] md:h-[400px] `}
-                    src={props?.avatar}
+                    src="https://res.cloudinary.com/diix8cjww/image/upload/v1703570402/aboutMeAvatar/twssoms7kbwhny7hekyo.jpg"
                     alt=""
                 />
             </div>
@@ -95,25 +98,27 @@ export function AboutMe({ props }) {
                     <span className="text-violet-400 ">Sandeep</span> Kumar
                 </h2>
                 <p className="my-[5px] capitalize ">
-                    {
-                        props?.description
-                    }
+                    Hi, I'm Sandeep, A Dedicated MERN Stack Developer Passionate About Crafting Scalable, User-Friendly Applications. With Expertise In HTML, CSS, JS, MongoDB, Express.Js, React, And Node.Js, I Specialize In Building Robust, Efficient Web Solutions. I Thrive On Turning Challenges Into Innovative Solutions That Make A Positive Impact. Let's Create Something Extraordinary!
                 </p>
                 <div className="flex flex-wrap gap-[10px] select-none cursor-pointer ">
 
                     {
-                        props?.skills && props.skills.map((skill) => (
-                            < Skill props={skill} key={Math.random()} />
-                        ))
+
+                        skillValue.map((val) => {
+
+                            < div className={`px-[20px] font-semibold rounded py-[10px] !bg-white !text-black`}>
+                                <p className="capitalize">{val}</p>
+                            </div>
+                        })
                     }
                 </div>
-                <a href={props?.resume} target='_main'>
+                <a href='https://docs.google.com/document/d/1FPxy_vgc66o70TDfBocVopxtva0Mq8F3lzf9RVa9CG4/edit?usp=sharing' target='_main'>
                     <button className={`${btn_style} flex my-[10px] items-center`}>
                         My Resume{" "}
                         <IoIosArrowRoundForward className="text-2xl font-bold " />{" "}
                     </button>
                 </a>
             </div>
-        </div>
+        </div >
     )
 }

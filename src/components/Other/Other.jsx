@@ -16,6 +16,7 @@ export function Skill({ props }) {
 
     )
 }
+
 export function SliderBtn() {
 
     const mode_style = useSelector((state) => state.mode_style)
